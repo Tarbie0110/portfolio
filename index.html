@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Makwena Rammutla — Backend Engineer, AWS builder, and former Amazon SDE intern from Limpopo, South Africa." />
+  <title>Makwena Rammutla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <span class="nav-logo">MR</span>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Leina la me</p>
+        <h1 id="hero-heading">Makwena<br />Rammutla</h1>
+        <p class="hero-tagline">fullstack Engineer &amp; AWS Builder<br />
+          <span>Former SDE Intern · Amazon Cape Town</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────── -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">01 / About</div>
+        <h2 id="about-heading">About me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm from Limpopo, South Africa — I speak Sepedi and English. I interned as a
+              Software Development Engineer at Amazon in Cape Town, where I owned a GenAI
+              self-service project from the first design document all the way to deployment.
+            </p>
+            <p>
+              Right now I'm going deeper into backend engineering and distributed systems,
+              and looking for my first full-time engineering role.
+            </p>
+            <!-- ── FUN FACT: interactive skater Easter egg ── -->
+            <div class="about-fun-fact" id="fun-fact-block">
+              <span class="fun-fact-label">Fun fact —</span>
+              I love analyzing human behavior and predicting people's next moves.
+              <div class="skater-wrapper" aria-label="Interactive Easter egg: click the skater">
+                <canvas
+                  id="skater-canvas"
+                  width="220"
+                  height="90"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Pixel-art skater. Click to watch her try a trick."
+                  title="Click me!"
+                ></canvas>
+                <span class="skater-hint" aria-hidden="true">click her ↑</span>
+              </div>
+              <!-- Stats card — hidden until after the fall -->
+              <div class="skater-stats" id="skater-stats" aria-live="polite" aria-atomic="true" hidden>
+                <div class="skater-stats-header">
+                  <span class="skater-stats-icon" aria-hidden="true">🛹</span>
+                  <span class="skater-stats-title">PLAYER STATS UNLOCKED</span>
+                </div>
+                <ul class="skater-stats-list">
+                  <li>
+                    <span class="stat-name">Skateboarding</span>
+                    <span class="stat-value">LVL 1 <span class="stat-bar" data-fill="1" aria-hidden="true"></span></span>
+                  </li>
+                  <li>
+                    <span class="stat-name">Fear of losing teeth</span>
+                    <span class="stat-value">MAX <span class="stat-bar" data-fill="10" aria-hidden="true"></span></span>
+                  </li>
+                  <li>
+                    <span class="stat-name">Human behavior analysis</span>
+                    <span class="stat-value">LVL 99 <span class="stat-bar" data-fill="10" aria-hidden="true"></span></span>
+                  </li>
+                </ul>
+                <button class="skater-reset" id="skater-reset" aria-label="Let her try again">↩ try again</button>
+              </div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-inner">
+              <div class="about-detail">
+                <span class="about-detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>From</strong>
+                  <span>Limpopo, South Africa</span>
+                </div>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-icon" aria-hidden="true">🎓</span>
+                <div>
+                  <strong>Education</strong>
+                  <span>Diploma in IT, Software Development<br />Tshwane University of Technology</span>
+                </div>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-icon" aria-hidden="true">🏢</span>
+                <div>
+                  <strong>Last role</strong>
+                  <span>SDE Intern · Amazon, Cape Town</span>
+                </div>
+              </div>
+              <div class="about-detail">
+                <span class="about-detail-icon" aria-hidden="true">🗣️</span>
+                <div>
+                  <strong>Languages</strong>
+                  <span>Sepedi · English</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────── -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">02 / Skills</div>
+        <h2 id="skills-heading">What I work with</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="skill-list">
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">Java</li>
+              <li class="skill-tag">C++</li>
+              <li class="skill-tag">TypeScript</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Cloud &amp; Infrastructure</h3>
+            <ul class="skill-list">
+              <li class="skill-tag">AWS</li>
+              <li class="skill-tag">Lambda</li>
+              <li class="skill-tag">EventBridge</li>
+              <li class="skill-tag">S3</li>
+              <li class="skill-tag">CDK</li>
+              <li class="skill-tag">Linux</li>
+              <li class="skill-tag">Shell scripting</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>AI &amp; Architecture</h3>
+            <ul class="skill-list">
+              <li class="skill-tag">RAG</li>
+              <li class="skill-tag">GenAI</li>
+              <li class="skill-tag">System Design</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────────── -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">03 / Projects</div>
+        <h2 id="projects-heading">Things I've built</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card project-card--featured" aria-labelledby="proj1-title">
+            <div class="project-card-accent" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-tag">AWS</span>
+                <span class="project-tag">GenAI</span>
+                <span class="project-tag">RAG</span>
+                <span class="project-badge">Amazon · Internship</span>
+              </div>
+              <h3 id="proj1-title">GenAI Self-Service Platform</h3>
+              <p>
+                A RAG platform on AWS that answers internal questions so on-call engineers
+                don't have to. Owned from first design to deployment. Built with Lambda,
+                EventBridge, S3 and CDK, complete with integration tests and alarms.
+              </p>
+              <div class="project-impact">
+                <span class="impact-number">42%</span>
+                <span class="impact-label">drop in support ticket escalations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" aria-labelledby="proj2-title">
+            <div class="project-card-accent" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-tag">UML</span>
+                <span class="project-tag">OOP</span>
+                <span class="project-tag">System Design</span>
+                <span class="project-badge">University Project</span>
+              </div>
+              <h3 id="proj2-title">Transport Management System</h3>
+              <p>
+                Interviewed a real project manager and turned their workflows into a
+                UML-modeled, object-oriented system design — bridging real business
+                requirements and software architecture.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" aria-labelledby="proj3-title">
+            <div class="project-card-accent" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-tag">Linux</span>
+                <span class="project-tag">Raspberry Pi</span>
+                <span class="project-tag">Networking</span>
+                <span class="project-badge">Personal Project</span>
+              </div>
+              <h3 id="proj3-title">Raspberry Pi Server</h3>
+              <p>
+                Ubuntu on a Raspberry Pi 5, automated with shell scripts, running an
+                Apache web server behind custom firewall rules. Full hands-on control
+                from hardware to network security.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 4 — with external link -->
+          <article class="project-card" aria-labelledby="proj4-title">
+            <div class="project-card-accent" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-tag">AWS</span>
+                <span class="project-tag">Blog</span>
+                <span class="project-badge">Writing</span>
+              </div>
+              <h3 id="proj4-title">Build Your Portfolio on AWS</h3>
+              <p>
+                A blog series that walks developers from creating an AWS account all the
+                way to a fully deployed portfolio — making cloud-hosted personal sites
+                accessible to everyone.
+              </p>
+              <a
+                class="project-link"
+                href="https://builder.aws.com/content/3K0hPixvikMqQ93vuL1Oyu5vym5/how-to-create-your-aws-account-and-first-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the Build Your Portfolio on AWS blog series (opens in new tab)"
+              >
+                Read the series <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ─────────────────────────────────── -->
+    <section class="section certifications" id="certifications" aria-labelledby="certs-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">04 / Certifications</div>
+        <h2 id="certs-heading">Certifications</h2>
+        <div class="certs-list">
+
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                <path d="M13 20l5 5 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3>AWS Microcredential: Serverless</h3>
+              <p class="cert-issuer">Amazon Web Services</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                <path d="M13 20l5 5 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3>Getting Started with Amazon Bedrock and Prompt Engineering</h3>
+              <p class="cert-issuer">Amazon Machine Learning University</p>
+              <p class="cert-date">August 2025</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-label" aria-hidden="true">05 / Contact</div>
+        <h2 id="contact-heading">Let's connect</h2>
+        <p class="contact-intro">
+          I'm looking for my first full-time engineering role. If you have an opportunity
+          or just want to talk software development and AWS, reach out.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:makwenapr@gmail.com" class="contact-link" aria-label="Send email to Makwena">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Gmail</span>
+          </a>
+          <a href="https://linkedin.com/in/makwenar" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Makwena on LinkedIn (opens in new tab)">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M11 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M11 10v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>Makwena Rammutla</span>
+          </a>
+          <a href="https://github.com/tarbie0110" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Makwena on GitHub (opens in new tab)">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span>Makwena's github account</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built by Makwena Rammutla · Limpopo, South Africa 🇿🇦</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
